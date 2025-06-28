@@ -32,12 +32,12 @@
     {/if}
 
     <div class="mb-4">
-        <label for="username" class="block text-gray-700 mb-1">User</label>
+        <label for="username" class="block text-gray-700 mb-1">User &#40;admin&#41;</label>
         <input id="username" bind:value={username} type="text" class="w-full p-2 border rounded" />
     </div>
 
     <div class="mb-6">
-        <label for="password" class="block text-gray-700 mb-1">Password</label>
+        <label for="password" class="block text-gray-700 mb-1">Password &#40;cafecito123&#41;</label>
         <input id="password" bind:value={password} type="password" class="w-full p-2 border rounded" />
     </div>
 
