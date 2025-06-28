@@ -41,21 +41,21 @@
   }
 </script>
 
-<h1 class="text-2xl font-bold mb-4">Editar producto</h1>
+<h1 class="text-2xl font-bold mb-4">Edit Product</h1>
 
 <div class="space-y-4">
   <div>
-    <label for="nombre" class="block text-gray-700">Nombre del producto</label>
+    <label for="nombre" class="block text-gray-700">Product Name</label>
     <input id="nombre" bind:value={name} type="text" class="w-full border p-2 rounded" />
   </div>
 
   <div>
-    <label for="stock" class="block text-gray-700">Cantidad en stock</label>
+    <label for="stock" class="block text-gray-700">Stock Quantity</label>
     <input id="stock" bind:value={stock} type="number" min="0" class="w-full border p-2 rounded" />
   </div>
 
   <div>
-    <label for="precio" class="block text-gray-700">Precio</label>
+    <label for="precio" class="block text-gray-700">Price</label>
     <input id="precio" bind:value={price} type="number" min="0" class="w-full border p-2 rounded" />
   </div>
 
@@ -64,14 +64,14 @@
       on:click={guardarCambios}
       class="bg-blue-600 text-white px-4 py-2 rounded"
     >
-      Guardar cambios
+      Save Changes
     </button>
 
     <button
       on:click={() => goto('/dashboard/inventory')}
       class="bg-gray-600 text-white px-4 py-2 rounded"
     >
-      Cancelar
+      Cancel
     </button>
   </div>
 </div>

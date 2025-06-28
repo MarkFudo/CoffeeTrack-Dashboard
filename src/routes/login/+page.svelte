@@ -25,19 +25,19 @@
 
 <div class="h-screen flex items-center justify-center bg-gray-100">
   <div class="bg-white p-8 rounded shadow-md w-full max-w-md">
-    <h1 class="text-2xl font-bold mb-6 text-center">Inicio de sesión</h1>
+    <h1 class="text-2xl font-bold mb-6 text-center">Login</h1>
 
     {#if error}
       <p class="text-red-600 mb-4">{error}</p>
     {/if}
 
     <div class="mb-4">
-        <label for="username" class="block text-gray-700 mb-1">Usuario</label>
+        <label for="username" class="block text-gray-700 mb-1">User</label>
         <input id="username" bind:value={username} type="text" class="w-full p-2 border rounded" />
     </div>
 
     <div class="mb-6">
-        <label for="password" class="block text-gray-700 mb-1">Contraseña</label>
+        <label for="password" class="block text-gray-700 mb-1">Password</label>
         <input id="password" bind:value={password} type="password" class="w-full p-2 border rounded" />
     </div>
 
@@ -46,7 +46,7 @@
       on:click={handleLogin}
       class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded w-full"
     >
-      Iniciar sesión
+      Login
     </button>
   </div>
 </div>

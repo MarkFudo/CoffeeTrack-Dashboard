@@ -13,7 +13,7 @@
 
   function registrarVenta() {
     if (!selectedProduct || quantity <= 0 || quantity > selectedProduct.stock) {
-      error = 'Cantidad inválida o producto no disponible';
+      error = 'Invalid quantity or product not available';
       return;
     }
 
@@ -42,7 +42,7 @@
   }
 </script>
 
-<h1 class="text-2xl font-bold mb-4">Registrar venta</h1>
+<h1 class="text-2xl font-bold mb-4">Register Sale</h1>
 
 {#if error}
   <p class="text-red-600 mb-4">{error}</p>
@@ -50,17 +50,17 @@
 
 <div class="space-y-4">
   <div>
-    <label for="producto" class="block text-gray-700">Producto</label>
+    <label for="producto" class="block text-gray-700">Product</label>
     <select id="producto" bind:value={selectedProductId} class="w-full border p-2 rounded">
-      <option value="">-- Selecciona un producto --</option>
+      <option value="">-- Select a Product --</option>
       {#each availableProducts as prod}
-        <option value={prod.id}>{prod.name} - ${prod.price} ({prod.stock} disponibles)</option>
+        <option value={prod.id}>{prod.name} - ${prod.price} ({prod.stock} available)</option>
       {/each}
     </select>
   </div>
 
   <div>
-    <label for="cantidad" class="block text-gray-700">Cantidad</label>
+    <label for="cantidad" class="block text-gray-700">Quantity</label>
     <input id="cantidad" bind:value={quantity} type="number" min="1" class="w-full border p-2 rounded" />
   </div>
 
@@ -69,6 +69,6 @@
   </div>
 
   <button on:click={registrarVenta} class="bg-blue-600 text-white px-4 py-2 rounded">
-    Registrar
+    Register
   </button>
 </div>

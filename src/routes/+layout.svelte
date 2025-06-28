@@ -8,10 +8,10 @@
   <aside class="w-64 bg-gray-800 text-white hidden md:block">
     <div class="p-4 font-bold text-lg border-b border-gray-600">☕ CoffeeTrack</div>
     <nav class="mt-4 flex flex-col space-y-2 px-4">
-      <a href="/dashboard" class="hover:bg-gray-700 p-2 rounded">Inicio</a>
-      <a href="/dashboard/inventory" class="hover:bg-gray-700 p-2 rounded">Inventario</a>
-      <a href="/dashboard/sales/register" class="hover:bg-gray-700 p-2 rounded">Ventas</a>
-      <a href="/dashboard/reports" class="hover:bg-gray-700 p-2 rounded">Reportes</a>
+      <a href="/dashboard" class="hover:bg-gray-700 p-2 rounded">Start</a>
+      <a href="/dashboard/inventory" class="hover:bg-gray-700 p-2 rounded">Inventory</a>
+      <a href="/dashboard/sales/register" class="hover:bg-gray-700 p-2 rounded">Sales</a>
+      <a href="/dashboard/reports" class="hover:bg-gray-700 p-2 rounded">Reports</a>
     </nav>
   </aside>
 
@@ -19,7 +19,7 @@
   <div class="flex-1 flex flex-col">
     <!-- Navbar -->
     <header class="bg-white shadow px-4 py-2 flex justify-between items-center">
-      <div class="text-xl font-semibold text-gray-800">Panel de administración</div>
+      <div class="text-xl font-semibold text-gray-800">Admin Dashboard</div>
       <div>
         <button
           class="text-sm text-gray-600 hover:underline"
@@ -28,7 +28,7 @@
             location.href = '/login';
           }}
         >
-          Cerrar sesión
+          Log Out
         </button>
       </div>
     </header>
